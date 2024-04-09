@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form>
+        <h1 class="naslov1">Rezervacija smestaja</h1>
+        <br>
+        <div class="ceo">
+        <div class="levo">
+            <label>Hotel</label>
+            <select id="hoteli"></select>
+            <br>
+            <label>Soba</label>
+            <select id="sobe"></select>
+        </div>
+        <div class="desno">
+            <label>Datum od</label>
+            <input type="text" id="datumod">
+            <br>
+            <label>Datum do</label>
+            <input type="text" id="datumdo">
+        </div>
+        </div>
+        <label>Dodatne opcije</label>
+        <br>
+        <div class="opcije">
+        <input type="checkbox" name="opcije" value="dorucak">
+        <label>Dorucak</label>
+        <br>
+        <input type="checkbox" name="opcije" value="rucak">
+        <label>Rucak</label>
+        <br>
+        <input type="checkbox" name="opcije" value="vecera">
+        <label>Vecera</label>
+        <br></div>
+        <div class="napomena">
+            <label>Napomena:</label>
+            <textarea id="area"></textarea>
+            <button type="submit" id="rezervisi">Rezervisi</button>
+        </div>
+    </form>
+    <h1>Rezervacije</h1>
+    <table id="tabela">
+        <thead>
+            <tr>
+            <th>Hotel</th>
+            <th>Soba</th>
+            <th>Datum od</th>
+            <th>Datum do</th>
+            </tr> 
+        </thead>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>

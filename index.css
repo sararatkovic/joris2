@@ -1,0 +1,85 @@
+form {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #ccc; /* Uokvirivanje forme */
+    padding: 20px;
+}
+
+.naslov1 {
+    text-align: center;
+}
+
+.ceo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.levo,
+.desno {
+    width: 45%; /* Prilagodite širinu prema potrebi */
+    display: inline-block
+}
+
+label {
+    display: flex;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+select,
+input[type="text"],
+textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.opcije{
+    width: 10%;
+    border: 1px solid ;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.opcije input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.opcije label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.napomena textarea {
+    height: 100px;
+    resize: vertical; /* Omogućava vertikalno povećanje textarea */
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+#tabela{
+    border-collapse: collapse;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+th, td{
+   border: 1px solid black;
+    padding: 8px; 
+    width: 25%;
+}
